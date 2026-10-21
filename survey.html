@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f2eb">
+  <meta name="description" content="국가인권위원회에서 받을 수 있는 도움을 확인하는 자가점검 설문입니다.">
+  <title>나에게 맞는 도움 찾기 — 인권을 잇다</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body class="survey-window">
+  <main class="survey-window-shell">
+    <header class="survey-window-header">
+      <a class="brand" href="index.html" target="_blank" rel="noopener noreferrer" aria-label="소개 페이지 열기">
+        <span class="brand-mark" aria-hidden="true">人</span>
+        <span><strong>인권을 잇다</strong><small>국가인권위원회 한눈에 보기</small></span>
+      </a>
+      <button class="survey-close" id="close-survey" type="button" aria-label="설문 창 닫기">닫기 <span aria-hidden="true">×</span></button>
+    </header>
+    <section class="survey-window-content" aria-labelledby="survey-title">
+      <div class="section-kicker">FIND YOUR NEXT STEP</div>
+      <h1 id="survey-title">나에게 어떤 도움이<br>필요한지 확인해 보세요</h1>
+      <p class="survey-window-intro">해당하는 항목을 골라 주세요. 답변은 저장하거나 전송하지 않습니다.</p>
+      <form class="help-check-form" id="help-check-form">
+        <fieldset class="check-group">
+          <legend><span class="question-number">01</span><span><strong>어떤 일과 관련 있나요?</strong><small>여러 항목을 선택할 수 있어요.</small></span></legend>
+          <div class="check-options">
+            <label class="check-option"><input type="checkbox" name="situation" value="public"><span class="custom-check" aria-hidden="true"></span><span><strong>국가기관·지자체·공공기관에서 겪은 일</strong><small>경찰, 학교 등 공공기관의 업무와 관련한 인권침해</small></span></label>
+            <label class="check-option"><input type="checkbox" name="situation" value="discrimination"><span class="custom-check" aria-hidden="true"></span><span><strong>개인적 특성 때문에 차별받은 일</strong><small>성별, 장애, 나이, 출신, 종교 등과 관련한 불리한 대우</small></span></label>
+            <label class="check-option"><input type="checkbox" name="situation" value="access"><span class="custom-check" aria-hidden="true"></span><span><strong>장애로 인해 시설·서비스 이용이 어려운 일</strong><small>이동, 정보 접근, 고용·교육 등에서 겪은 장벽</small></span></label>
+            <label class="check-option"><input type="checkbox" name="situation" value="military"><span class="custom-check" aria-hidden="true"></span><span><strong>군 복무 중 겪은 인권 문제</strong><small>폭언·폭행, 부당한 대우, 군 사망사건 등</small></span></label>
+            <label class="check-option"><input type="checkbox" name="situation" value="harassment"><span class="custom-check" aria-hidden="true"></span><span><strong>직장 등 업무와 관련한 성희롱</strong><small>공공기관 종사자나 사용자 등의 업무 관련 행위</small></span></label>
+            <label class="check-option"><input type="checkbox" name="situation" value="policy"><span class="custom-check" aria-hidden="true"></span><span><strong>개별 사건보다 제도·관행을 바꾸고 싶어요</strong><small>법령, 정책, 관행에 대한 개선 의견이나 권고</small></span></label>
+            <label class="check-option"><input type="checkbox" name="situation" value="unsure"><span class="custom-check" aria-hidden="true"></span><span><strong>잘 모르겠어요 / 다른 상황이에요</strong><small>상담으로 먼저 확인하고 싶어요.</small></span></label>
+          </div>
+        </fieldset>
+        <fieldset class="check-group check-group-next">
+          <legend><span class="question-number">02</span><span><strong>지금 가장 필요한 도움은 무엇인가요?</strong><small>해당하는 항목을 골라 주세요.</small></span></legend>
+          <div class="check-options check-options-short">
+            <label class="check-option"><input type="checkbox" name="need" value="case"><span class="custom-check" aria-hidden="true"></span><span><strong>구체적인 사건을 상담하거나 진정하고 싶어요</strong></span></label>
+            <label class="check-option"><input type="checkbox" name="need" value="policy"><span class="custom-check" aria-hidden="true"></span><span><strong>제도나 관행 개선을 제안하고 싶어요</strong></span></label>
+            <label class="check-option"><input type="checkbox" name="need" value="learn"><span class="custom-check" aria-hidden="true"></span><span><strong>인권 정보를 더 알아보고 싶어요</strong></span></label>
+          </div>
+        </fieldset>
+        <div class="help-check-actions"><p>이 점검은 길잡이이며, 정식 판단이나 접수 결과를 보장하지 않습니다.</p><button type="submit" class="button button-dark">나에게 맞는 안내 보기 <span aria-hidden="true">→</span></button></div>
+      </form>
+      <div class="help-result" id="help-result" role="status" aria-live="polite" tabindex="-1" hidden></div>
+      <p class="privacy-note"><span aria-hidden="true">↗</span> 입력한 내용은 저장되거나 전송되지 않습니다.</p>
+    </section>
+  </main>
+</body>
+</html>
